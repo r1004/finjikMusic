@@ -1,0 +1,35 @@
+{
+    "name": "سورس فين وجيك ميوزك",
+    "description": "سورس ميوزك لتشغيل الاغاني في المحادثات الصوتية .",
+    "keywords": ["JEPTHON", "JEPTHON-MUSIC", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
+    "repository": "https://github.com/lMl10l/Jepthon-313",
+  "stack": "container",
+    "env": {
+        "APP_ID": {
+            "description": "ضع هنا الايبي ايدي حساب المساعد"
+        },
+        "API_HASH": {
+            "description": "ضع هنا الايبي هاش حساب المساعد"
+        },
+        "STRING_SESSION": {
+            "description": "يرجى وضع كود سيشن تليثون (كود تيرمكس) للحساب المساعد هنا ",
+            "required": true
+        },
+        "HEROKU_MODE": {
+            "description": "لا تغير هذه نهائيا",
+            "required": true,
+            "value": "ENABLE"
+        },
+        "BOT_USERNAME": {
+            "description": "هنا ضع معرف البوت بدون @",
+            "required": false,
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "هنا ضع توكن بوتك",
+            "required": true,
+            "value": ""
+        }
+
+    }
+  }
