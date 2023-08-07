@@ -18,5 +18,5 @@ CAPTION = f"**سرعة البنك:** {ms}\n المالك:『{ALIVE}』"
 
 @JE313P.on(events.NewMessage(pattern="^/بنك"))
 async def _(event):
-    UMM = [[Button.url("السورس", "https://t.me/JEPTHON")]]
+    UMM = [[Button.url("السورس", "https://t.me/allsayid")]]
     await JE313P.send_file(event.chat_id, IMG, caption=CAPTION, buttons=UMM)
