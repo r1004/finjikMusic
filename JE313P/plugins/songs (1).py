@@ -1,4 +1,4 @@
-import os
+hiimport os
 import requests
 import aiohttp
 import yt_dlp
@@ -14,7 +14,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-@app.on_message(command(["بحث", f"يوت"])
+@app.on_message(command(["بحث!", f"يوت!"])
 & ~filters.edited)
 def song(_, message):
 
@@ -42,7 +42,7 @@ def song(_, message):
 
     except Exception as e:
         m.edit(
-            "‹ الاغنيه مموجودة ترا ، انطيني اسمها الكامل ›"
+            "‹ الاغنيه ماكو انطيني اسمها الكامل ›"
         )
         print(str(e))
         return
