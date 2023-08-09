@@ -14,7 +14,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-@app.on_message(command(["بحث", f"يوت"])
+@JE313P.on(events.NewMessage(pattern=)"^[!?/]بحث ?(.*)"
 & ~filters.edited)
 def song(_, message):
 
