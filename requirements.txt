@@ -1,4 +1,4 @@
-telethon==1.24.0
+pip install telethon
 py-tgcalls
 requests
 pillow
